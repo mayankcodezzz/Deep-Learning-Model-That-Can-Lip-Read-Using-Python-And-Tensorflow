@@ -1,4 +1,4 @@
-# Deep-Learning-Model-That-Can-Lip-Read-Using-Python-And-Tensorflow
+# Deep Learning Model That Can Lip Read Using Python And Tensorflow
 
 
 This project leverages deep learning to perform video-to-text transcription using a Connectionist Temporal Classification (CTC) model. The model is trained to recognize speech or actions from video frames and output a corresponding text transcription. The process begins by preprocessing video data into frame sequences, which are then passed into a recurrent neural network (RNN) model designed for sequence-to-sequence tasks. 
@@ -6,34 +6,24 @@ This project leverages deep learning to perform video-to-text transcription usin
 The project uses TensorFlow and Keras for model implementation, with the CTC loss function employed to handle the alignment between input frames and output transcriptions. A custom callback function is integrated to visualize predictions during training and to save model weights. The model is optimized using the Adam optimizer with a learning rate scheduler to adjust the learning rate as training progresses. 
 
 Once trained, the model can process unseen video samples and predict corresponding transcriptions using CTC decoding. This approach is robust to varying sequence lengths and allows the model to predict text from videos where the alignment between input and output is not explicitly available. The model is evaluated on multiple video samples, showing its capability to transcribe speech or actions with notable accuracy, offering potential applications in automated captioning, video indexing, and accessibility tools.
-# Deep LearningModelThat Can LipRead
 
-# Using Python And Tensorflow
-
-```
-MayankPareek^1 ,TulsiPatel^2
-CollegeOfScienceandHealth,DepaulUniversity,Chicago-USA
-{tpatel91,mpareek}@depaul.edu
-Herewearegoingtoimplementthepaper
-LIPNET:END-TO-ENDSENTENCE-LEVELLIPREADING
-```
 Lipreading is the task of decoding text from the movement of a speaker’s
-mouth.Traditionalapproachesseparatedtheproblemintotwostages:designing
+mouth. Traditional approaches separated the problem into two stages: designing
 or learning visual features, and prediction. More recent deep lip reading
-approaches are end-to-endtrainable (Wandet al., 2016;Chung&Zisserman,
+approaches are end-to-end trainable (Wand et al., 2016; Chung & Zisserman,
 2016a). However, existing work on models trained end-to-end perform only
-wordclassification,ratherthansentence-levelsequenceprediction.Studieshave
-shownthathumanlipreadingperformanceincreasesforlongerwords(Easton&
-Basala,1982),indicatingtheimportanceoffeaturescapturingtemporalcontext
-in an ambiguous communication channel.Motivated bythis observation, we
-presentLipNet,amodelthatmapsavariable-lengthsequenceofvideoframesto
-text, making useofspatiotemporalconvolutions,arecurrent network,andthe
-connectionist temporal classification loss, trained entirely end-to-end. Tothe
-bestofourknowledge,LipNetis thefirstend-to-endsentence-levellipreading
-modelthatsimultaneouslylearnsspatiotemporalvisualfeaturesandasequence
-model.OntheGRIDcorpus,LipNetachieves95.2%accuracyinsentence-level,
-overlappedspeakersplittask,outperformingexperiencedhumanlipreadersand
-theprevious86.4%word-levelstate-of-the-artaccuracy(Gergenetal.,2016).
+word classification, rather than sentence-level sequence prediction. Studies have
+shown that human lipreading performance increases for longer words (Easton &
+Basala, 1982), indicating the importance of features capturing temporal context
+in an ambiguous communication channel. Motivated by this observation, we
+present LipNet, a model that maps a variable-length sequence of video frames to
+text, making use of spatiotemporal convolutions, a recurrent network, and the
+connectionist temporal classification loss, trained entirely end-to-end. To the
+best of our knowledge, LipNet is the first end-to-end sentence-level lipreading
+model that simultaneously learns spatiotemporal visual features and a sequence
+model. On the GRID corpus, LipNet achieves 95.2% accuracy in sentence-level,
+overlapped speaker split task, outperforming experienced human lip readers and
+the previous 86.4% word-level state-of-the-art accuracy (Gergen et al., 2016).
 
 
 **ImportDependencies**
