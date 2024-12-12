@@ -1,5 +1,6 @@
 # Deep Learning Model That Can Lip Read Using Python And Tensorflow
 
+Refer pdf for code Explaination
 
 This project leverages deep learning to perform video-to-text transcription using a Connectionist Temporal Classification (CTC) model. The model is trained to recognize speech or actions from video frames and output a corresponding text transcription. The process begins by preprocessing video data into frame sequences, which are then passed into a recurrent neural network (RNN) model designed for sequence-to-sequence tasks. 
 
