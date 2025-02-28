@@ -1,5 +1,7 @@
 ### The "Deep Learning Model That Can Lip Read Using Python and TensorFlow" project focuses on developing a deep learning model capable of transcribing spoken words from video footage by analyzing lip movements. This approach is particularly beneficial in scenarios where audio is unavailable or unreliable, such as silent videos or noisy environments.
 
+![Screenshot (16)](https://github.com/user-attachments/assets/6cf417b4-1099-4f7b-adb7-378fd142f124)
+
 # Technical Approach:
 
 ### Data Preprocessing:
